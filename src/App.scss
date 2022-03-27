@@ -1,0 +1,59 @@
+@import 'antd/dist/antd.css';
+.notebook {
+  text-align: center;
+  min-height: 300px;
+  width: 900px;
+  margin: 50px;
+  display: flex;
+  >section {
+    flex: 1
+  }
+  >aside {
+    flex: 2;
+  }
+  &-editing-zone {
+    padding-right: 50px;
+    border-right: 2px solid #dddddd;
+    &>* {
+      margin-bottom: 20px;
+    }
+  }
+  &-preview {
+    padding-left: 50px;
+    &>* {
+      margin-bottom: 20px;
+    }
+  }
+  &-item {
+    position: relative;
+    text-align: left;
+    color: #409eff;
+    background: #ecf5ff;
+    border-color: #b3d8ff;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    &-wrapper {
+      width: 100%;
+    }
+    &-content {
+      text-indent: 2em;
+    }
+    &-delete {
+      position: absolute;
+      right: 16px;
+      top: 10px;
+    }
+  }
+  .ant-list-item {
+    transition: width .35s linear;
+    flex-direction: column;
+    padding: 10px 20px 20px;
+    &-meta {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    &-meta-title {
+      font-size: 20px;
+    }
+  }
+}
